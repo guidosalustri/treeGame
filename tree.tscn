@@ -1,0 +1,118 @@
+[gd_scene load_steps=3 format=3 uid="uid://boekuyhsemr4n"]
+
+[ext_resource type="Texture2D" uid="uid://dwy1vklfifxcg" path="res://Tree_1_512b.png" id="1_mjkk4"]
+[ext_resource type="PackedScene" uid="uid://cuofomelhls5v" path="res://leaf.tscn" id="2_rc5p2"]
+
+[node name="Tree" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.2, 1.285)
+texture = ExtResource("1_mjkk4")
+
+[node name="leaf5" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-312, -286)
+
+[node name="leaf4" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-186, -337)
+
+[node name="leaf" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-334, -186)
+
+[node name="leaf2" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-203, -187)
+
+[node name="leaf3" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-248, -159)
+
+[node name="leaf6" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-275, -348)
+
+[node name="leaf7" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-166, -115)
+
+[node name="leaf8" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-120, -336)
+
+[node name="leaf9" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-19, -344)
+
+[node name="leaf10" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(53, -338)
+
+[node name="leaf11" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(87, -280)
+
+[node name="leaf12" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(78, -198)
+
+[node name="leaf13" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-12, -210)
+
+[node name="leaf14" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-142, -258)
+
+[node name="leaf15" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-226, -261)
+
+[node name="leaf16" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(158, -272)
+
+[node name="leaf17" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(223, -283)
+
+[node name="leaf18" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-83, -324)
+
+[node name="leaf19" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-45, -306)
+
+[node name="leaf20" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-63, -369)
+
+[node name="leaf21" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-128, -381)
+
+[node name="leaf22" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-149, -307)
+
+[node name="leaf23" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-233, -345)
+
+[node name="leaf24" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-278, -299)
+
+[node name="leaf25" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-322, -338)
+
+[node name="leaf26" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-337, -242)
+
+[node name="leaf27" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-289, -171)
+
+[node name="leaf28" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-271, -244)
+
+[node name="leaf29" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-196, -386)
+
+[node name="leaf30" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-264, -401)
+
+[node name="leaf31" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-318, -382)
+
+[node name="leaf32" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-111, -211)
+
+[node name="leaf33" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-187, -224)
+
+[node name="leaf34" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-155, -162)
+
+[node name="leaf35" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-204, -129)
+
+[node name="leaf36" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(-111, -286)
