@@ -4,6 +4,7 @@ extends Node2D
 @onready var timer_2 = $Timer2
 @onready var sprite_2d_2 = $Area2D/Sprite2D2
 @onready var sprite_2d_3 = $Area2D/Sprite2D3
+@onready var animation_player = $Area2D/Sprite2D2/AnimationPlayer
 
 var rng = RandomNumberGenerator.new()
 var flag=true
@@ -11,10 +12,12 @@ var flag=true
 func _ready():
 	sprite_2d.hide()
 	sprite_2d_3.hide()
+	animation_player.play("shadow")
 	randomize()
 
 func _process(delta):
-	
+	if Energy.sap<=0:
+		animation_player.stop()
 	if Energy.season==2 && flag:
 		randomize()
 		sprite_2d_3.show()
