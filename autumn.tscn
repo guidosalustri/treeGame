@@ -1,0 +1,134 @@
+[gd_scene load_steps=14 format=3 uid="uid://c8wncn2tatu7o"]
+
+[ext_resource type="Script" path="res://autumn.gd" id="1_h38ox"]
+[ext_resource type="Texture2D" uid="uid://bhnwy3oda7ywp" path="res://winter_bg.png" id="2_ea3lo"]
+[ext_resource type="Texture2D" uid="uid://carktrlw7b2ap" path="res://autumn_bg.png" id="2_fxp1b"]
+[ext_resource type="PackedScene" uid="uid://boekuyhsemr4n" path="res://tree.tscn" id="3_d4y72"]
+[ext_resource type="AudioStream" uid="uid://ch1ffwk2w24p7" path="res://Lofi_game.mp3" id="4_riow7"]
+[ext_resource type="Texture2D" uid="uid://dmwj8rakvq6qd" path="res://Ui down.png" id="6_be8sg"]
+[ext_resource type="Texture2D" uid="uid://cp4mhxce5xr4d" path="res://Water UI Top.png" id="7_qny5t"]
+[ext_resource type="Texture2D" uid="uid://chrmfasjsn7ku" path="res://Tree ui Top.png" id="8_duxjs"]
+[ext_resource type="Script" path="res://sap.gd" id="9_8gtcw"]
+[ext_resource type="Texture2D" uid="uid://c0mrgs6114g1d" path="res://Tree trunk button .png" id="10_cg1xu"]
+
+[sub_resource type="Animation" id="Animation_d6npj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_d3ljj"]
+resource_name = "button"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.709, 1, 1.5),
+"transitions": PackedFloat32Array(2.2974, 0.307786, 0.535887, 4, 0.277392),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.592157, 0.509804, 0.14902, 1), Color(0.592157, 0.509804, 0.14902, 1), Color(0.592157, 0.509804, 0.14902, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_31o8a"]
+_data = {
+"RESET": SubResource("Animation_d6npj"),
+"button": SubResource("Animation_d3ljj")
+}
+
+[node name="Autumn" type="Node2D"]
+script = ExtResource("1_h38ox")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer2"]
+position = Vector2(1924.5, 1096)
+scale = Vector2(1.00339, 1.025)
+texture = ExtResource("2_ea3lo")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="BackgroundTile" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(1918.5, 1097)
+scale = Vector2(1.00964, 1.01852)
+texture = ExtResource("2_fxp1b")
+
+[node name="Tree" parent="." instance=ExtResource("3_d4y72")]
+position = Vector2(-12, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_riow7")
+autoplay = true
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+
+[node name="water" type="TextureProgressBar" parent="CanvasLayer3"]
+modulate = Color(0.980392, 0.988235, 1, 1)
+offset_left = 684.0
+offset_top = 1775.0
+offset_right = 1728.0
+offset_bottom = 1915.0
+scale = Vector2(1.12537, 1.76838)
+nine_patch_stretch = true
+stretch_margin_left = 4
+stretch_margin_top = 4
+stretch_margin_right = 4
+stretch_margin_bottom = 4
+texture_under = ExtResource("6_be8sg")
+texture_over = ExtResource("7_qny5t")
+texture_progress = ExtResource("7_qny5t")
+
+[node name="sap" type="TextureProgressBar" parent="CanvasLayer3"]
+modulate = Color(1, 0.996078, 0.992157, 1)
+offset_left = 3164.0
+offset_top = 2013.0
+offset_right = 4331.0
+offset_bottom = 2276.0
+rotation = 3.13757
+scale = Vector2(1.03465, 0.906065)
+max_value = 15.0
+value = 10.0
+fill_mode = 1
+nine_patch_stretch = true
+stretch_margin_left = 4
+stretch_margin_top = 4
+stretch_margin_right = 4
+stretch_margin_bottom = 4
+texture_under = ExtResource("6_be8sg")
+texture_progress = ExtResource("8_duxjs")
+script = ExtResource("9_8gtcw")
+
+[node name="Button" type="Button" parent="CanvasLayer3"]
+clip_contents = true
+anchors_preset = -1
+anchor_left = -0.0419271
+anchor_top = -0.10787
+anchor_right = 0.0127604
+offset_left = 1932.0
+offset_top = 1978.0
+offset_right = 1999.0
+offset_bottom = 2044.0
+icon = ExtResource("10_cg1xu")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer3/Button"]
+libraries = {
+"": SubResource("AnimationLibrary_31o8a")
+}

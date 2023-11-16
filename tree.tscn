@@ -1,118 +1,328 @@
-[gd_scene load_steps=3 format=3 uid="uid://boekuyhsemr4n"]
+[gd_scene load_steps=6 format=3 uid="uid://boekuyhsemr4n"]
 
-[ext_resource type="Texture2D" uid="uid://dwy1vklfifxcg" path="res://Tree_1_512b.png" id="1_mjkk4"]
+[ext_resource type="Script" path="res://tree.gd" id="1_3o1go"]
+[ext_resource type="Texture2D" uid="uid://c6lndv4v2vuhr" path="res://springandsummer_tree.png" id="1_oo1d2"]
 [ext_resource type="PackedScene" uid="uid://cuofomelhls5v" path="res://leaf.tscn" id="2_rc5p2"]
+[ext_resource type="Texture2D" uid="uid://5h10a645ofjt" path="res://autumn_tree.png" id="3_r7fq3"]
+[ext_resource type="Texture2D" uid="uid://dtyc16n8twnf0" path="res://winter_tree.png" id="4_11iu5"]
 
 [node name="Tree" type="Node2D"]
+scale = Vector2(1, 1.12)
+script = ExtResource("1_3o1go")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(1.2, 1.285)
-texture = ExtResource("1_mjkk4")
+position = Vector2(1927, 1008.93)
+scale = Vector2(0.995312, 0.911376)
+texture = ExtResource("1_oo1d2")
+
+[node name="autumnTree" type="Sprite2D" parent="."]
+position = Vector2(1914, 1003.66)
+scale = Vector2(1, 0.933284)
+texture = ExtResource("3_r7fq3")
+
+[node name="winterTree" type="Sprite2D" parent="."]
+position = Vector2(1906, 1007.14)
+scale = Vector2(1, 0.946015)
+texture = ExtResource("4_11iu5")
 
 [node name="leaf5" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-312, -286)
+position = Vector2(1250, 1145.54)
 
 [node name="leaf4" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-186, -337)
+position = Vector2(2084, 203.572)
 
 [node name="leaf" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-334, -186)
+position = Vector2(1560, 229)
 
 [node name="leaf2" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-203, -187)
+position = Vector2(1287, 1034.82)
 
 [node name="leaf3" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-248, -159)
+position = Vector2(1714, 332.143)
 
 [node name="leaf6" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-275, -348)
+position = Vector2(1113, 255)
 
 [node name="leaf7" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-166, -115)
+position = Vector2(2221, 198.214)
 
 [node name="leaf8" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-120, -336)
+position = Vector2(1141, 1068.75)
 
 [node name="leaf9" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-19, -344)
+position = Vector2(1598, 387.5)
 
 [node name="leaf10" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(53, -338)
+position = Vector2(1715, 505.357)
+rotation = -3.59014
+scale = Vector2(0.611139, 0.72879)
 
 [node name="leaf11" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(87, -280)
+position = Vector2(2721, 125)
 
 [node name="leaf12" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(78, -198)
+position = Vector2(2363, 89.2858)
 
 [node name="leaf13" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-12, -210)
+position = Vector2(1172, 58)
 
 [node name="leaf14" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-142, -258)
+position = Vector2(1020, 609.822)
 
 [node name="leaf15" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-226, -261)
+position = Vector2(1007, 238)
 
 [node name="leaf16" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(158, -272)
+position = Vector2(2553, 71.4286)
 
 [node name="leaf17" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(223, -283)
+position = Vector2(1328, 506)
 
 [node name="leaf18" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-83, -324)
+position = Vector2(1495, 140)
 
 [node name="leaf19" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-45, -306)
+position = Vector2(1333, 45)
 
 [node name="leaf20" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-63, -369)
+position = Vector2(2614, 182.143)
 
 [node name="leaf21" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-128, -381)
+position = Vector2(973, 854.465)
 
 [node name="leaf22" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-149, -307)
+position = Vector2(1024, 136.607)
 
 [node name="leaf23" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-233, -345)
+position = Vector2(1272, 209.822)
 
 [node name="leaf24" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-278, -299)
+position = Vector2(1085, 950)
 
 [node name="leaf25" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-322, -338)
+position = Vector2(1415, 197)
 
 [node name="leaf26" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-337, -242)
+position = Vector2(1269, 326)
 
 [node name="leaf27" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-289, -171)
+position = Vector2(1122, 389.286)
 
 [node name="leaf28" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-271, -244)
+position = Vector2(1973, 250)
 
 [node name="leaf29" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-196, -386)
+position = Vector2(1060, 523.215)
 
 [node name="leaf30" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-264, -401)
+position = Vector2(974, 707.143)
 
 [node name="leaf31" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-318, -382)
+position = Vector2(1153, 176)
 
 [node name="leaf32" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-111, -211)
+position = Vector2(1800, 258.929)
 
 [node name="leaf33" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-187, -224)
+position = Vector2(2504, 187.5)
 
 [node name="leaf34" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-155, -162)
+position = Vector2(1346, 683.036)
 
 [node name="leaf35" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-204, -129)
+position = Vector2(1368, 1126.79)
 
 [node name="leaf36" parent="." instance=ExtResource("2_rc5p2")]
-position = Vector2(-111, -286)
+position = Vector2(1506.75, 383.003)
+rotation = -1.1541
+scale = Vector2(0.983628, 0.783141)
+
+[node name="leaf37" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2797, 783.036)
+
+[node name="leaf38" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2721, 931.25)
+
+[node name="leaf39" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2358, 989.286)
+
+[node name="leaf40" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2193, 948.215)
+
+[node name="leaf41" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2757, 645.536)
+
+[node name="leaf42" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2685, 449.107)
+
+[node name="leaf43" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2612, 354.464)
+
+[node name="leaf44" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2498, 293.75)
+
+[node name="leaf45" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2223, 346.429)
+
+[node name="leaf46" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2057, 334.822)
+
+[node name="leaf47" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1951, 391.964)
+
+[node name="leaf48" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1956, 483.036)
+
+[node name="leaf49" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1803, 444.643)
+
+[node name="leaf50" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2490, 437.5)
+
+[node name="leaf51" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2536, 698.215)
+
+[node name="leaf52" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2413, 766.965)
+
+[node name="leaf53" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2426, 687.5)
+
+[node name="leaf54" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2625, 1046.43)
+
+[node name="leaf55" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2566, 1122.32)
+
+[node name="leaf56" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2443, 1163.39)
+
+[node name="leaf57" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2460, 1058.04)
+
+[node name="leaf58" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2625, 834.822)
+
+[node name="leaf59" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1231, 709.822)
+
+[node name="leaf60" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1235, 441.072)
+
+[node name="leaf61" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1561, 660.715)
+
+[node name="leaf62" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1667, 755.358)
+
+[node name="leaf63" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1701, 211.607)
+
+[node name="leaf64" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1644, 313.393)
+
+[node name="leaf65" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2142, 319.643)
+
+[node name="leaf66" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2004, 350)
+
+[node name="leaf67" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2256, 433.929)
+
+[node name="leaf68" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2196, 469.643)
+
+[node name="leaf69" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2418, 406.25)
+
+[node name="leaf70" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2566, 478.572)
+
+[node name="leaf71" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2660, 958.929)
+
+[node name="leaf72" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2764, 878.572)
+
+[node name="leaf73" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2273, 749.108)
+
+[node name="leaf74" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2317, 652.679)
+
+[node name="leaf75" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1789, 355.357)
+
+[node name="leaf76" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1547, 304.464)
+
+[node name="leaf77" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1325, 394.643)
+
+[node name="leaf78" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1146, 788.393)
+
+[node name="leaf79" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1039, 920.536)
+
+[node name="leaf80" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(978, 788.393)
+
+[node name="leaf81" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1203, 1118.75)
+
+[node name="leaf82" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1318, 1157.14)
+
+[node name="leaf83" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1355, 991.965)
+
+[node name="leaf84" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1432, 950)
+
+[node name="leaf85" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1466, 916.965)
+
+[node name="leaf86" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1109, 742.858)
+
+[node name="leaf87" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2270, 925.893)
+
+[node name="leaf88" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2650, 733.929)
+
+[node name="leaf89" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1624, 199.107)
+
+[node name="leaf90" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1237, 52.6786)
+
+[node name="leaf91" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1214, 175)
+
+[node name="leaf92" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1345, 247.322)
+
+[node name="leaf93" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2431, 223.214)
+
+[node name="leaf94" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2694, 208.036)
+
+[node name="leaf95" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2283, 205.357)
+
+[node name="leaf96" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2694, 575)
+
+[node name="leaf97" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(2112, 484.822)
+
+[node name="leaf98" parent="." instance=ExtResource("2_rc5p2")]
+position = Vector2(1896, 292.857)
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

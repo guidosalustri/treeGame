@@ -19,6 +19,13 @@ config/icon="res://icon.svg"
 
 Energy="*res://energy.gd"
 
+[display]
+
+window/size/viewport_width=3840
+window/size/viewport_height=2200
+window/size/mode=3
+window/stretch/mode="viewport"
+
 [input]
 
 click={
